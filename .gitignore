@@ -1,0 +1,4 @@
+#过滤node_modules
+/Angular_Full_Version/node_modules
+/Angular_Full_Version/.idea
+/Angular_Full_Version/.project

@@ -1,0 +1,49 @@
+<!--
+* INSPINIA - Responsive Admin Theme
+* Version 2.3
+*
+-->
+
+<!DOCTYPE html>
+<html  ng-app="inspinia">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Page title set in pageTitle directive -->
+    <title></title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font awesome -->
+    <link href="font-awesome/css/font-awesome.css" rel="stylesheet">
+
+    <!-- Main Inspinia CSS files -->
+    <link href="css/animate.css" rel="stylesheet">
+    <link id="loadBefore" href="css/style.css" rel="stylesheet">
+
+
+</head>
+
+<!-- ControllerAs syntax -->
+<!-- Main controller with serveral data used in Inspinia theme on diferent view -->
+<body ng-controller="MainCtrl">
+
+    {{test}}
+
+<script src="js/angular/angular.min.js"></script>
+
+<script type="text/javascript">
+    angular.module('inspinia',[])
+    .controller('MainCtrl',function($scope){
+        $scope.test = 'hello';
+    });
+
+
+</script>
+
+</body>
+</html>

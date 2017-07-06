@@ -1,0 +1,37 @@
+<div class="ibox-tools dropdown" dropdown>
+    <a ng-click="showhide()"> <i class="fa fa-chevron-up"></i></a>
+    <a  class="dropdown-toggle" href dropdown-toggle>
+        <i class="fa fa-wrench" ></i>
+    </a>
+    <ul class="dropdown-menu dropdown-user">
+        <li ng-click="bgColor()"><a href >color</a>
+        </li>
+        <li  data-toggle="modal" data-target="#myModal"><a href>width/height</a>
+        </li>
+    </ul>
+    <a ng-click="closebox()"><i class="fa fa-times"></i></a>
+</div>
+
+
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+            </div>
+            <div class="modal-body">
+                <div class="form-group">
+                    <label for="exampleInputEmail11">宽度</label>
+                    <input type="text" class="form-control" id="exampleInputEmail11" placeholder="宽度" ng-model="widths">
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+                <button type="button" class="btn btn-primary" ng-click="sure(widths)" data-dismiss="modal">确定</button>
+            </div>
+        </div>
+    </div>
+</div>
